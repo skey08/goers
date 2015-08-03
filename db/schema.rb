@@ -21,15 +21,7 @@ ActiveRecord::Schema.define(version: 20150803145633) do
     t.datetime "date"
     t.string   "venu"
     t.string   "photo_url"
-    t.integer  "goer_id"
-  end
-
-  add_index "concerts", ["goer_id"], name: "index_concerts_on_goer_id", using: :btree
-
-  create_table "goers", force: :cascade do |t|
-    t.string  "name"
-    t.integer "age"
-    t.string  "location"
+    t.string   "location"
   end
 
   create_table "images", force: :cascade do |t|
@@ -39,6 +31,5 @@ ActiveRecord::Schema.define(version: 20150803145633) do
 
   add_index "images", ["concert_id"], name: "index_images_on_concert_id", using: :btree
 
-  add_foreign_key "concerts", "goers"
   add_foreign_key "images", "concerts"
 end

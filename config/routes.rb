@@ -41,10 +41,8 @@ Rails.application.routes.draw do
   #   end
 
 
-    resources :goers do
-      resources :concerts do
-        resource :images
-      end
+    resources :concerts do
+      resources :images
     end
 
 

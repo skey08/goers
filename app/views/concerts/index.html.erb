@@ -1,0 +1,13 @@
+Hello!!!
+
+<h2>Concerts</h2>
+
+<h2><%= link_to "Add New Concert +", new_concert_path %></h2>
+
+<ul>
+  <% @concerts.each do |concert| %>
+    <li>
+      <%= link_to concert.artist, concert_path(concert) %>
+    </li>
+  <% end %>
+</ul>

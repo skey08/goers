@@ -1,0 +1,21 @@
+<h2>Add A New Concert</h2>
+
+<%= form_for (@concert) do |f| %>
+
+  <%= f.label :artist %>
+  <%= f.text_field :artist%>
+
+  <%= f.label :date %>
+  <%= f.text_field :date %>
+
+  <%= f.label :venue %>
+  <%= f.label :venue %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.submit %>
+<% end %>
