@@ -1,3 +1,7 @@
+https://github.com/skey08/goers     --project repo
+https://github.com/skey08/goers/tree/master/app/assets/images     --wireframe
+https://trello.com/b/2kd4Wrgm/goers    --trello
+
 My idea is to have a way for concert goers to share photos of concerts they
 have been to.  Initially someone will create a new post with an image of the
 concert they were at, their name, the date and venue.  Then other users can post
