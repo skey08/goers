@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+goers = Goer.create([
+  {name: 'Sam', age: 31, location: 'Washington DC'}
+  {name: 'Bob', age: 25, location: 'NYC'}
+  {name: 'Lily', age: 7, location: 'Raleigh, NC'}
+  ])

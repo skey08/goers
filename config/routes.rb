@@ -40,6 +40,14 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+
+    resources :goers do
+      resources :concerts do
+        resource :images
+      end
+    end
+
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
